@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/iteratehackerspace/horloge.png?label=ready&title=Ready)](http://waffle.io/iteratehackerspace/horloge)
+
 Horloge is a [Pomodoro](http://cirillocompany.de/pages/pomodoro-technique)-style timer, aiming at improving your work productivity.
 
 ## Core Features
