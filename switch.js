@@ -12,7 +12,7 @@ const Timer = function(counter) {
             break;
         default:
             if (counter <= 10 && counter) {
-                console.log(counter);
+                console.log(counter) ;
             } else if (counter % 60 === 0) {
                 if (counter / 60 <= 5 && counter / 60 > 0) {
                     console.log(~~(counter / 60) + "mn left");
