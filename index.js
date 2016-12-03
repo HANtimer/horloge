@@ -1,35 +1,34 @@
 #!/usr/bin/env node
 
-/**
- * Module dependencies
- */
 const horloge = require('commander');
 
-/**
- * Methods
- */
-const runInterval = function (duration, interval = 60000) {
-  console.log(`${duration}mn left`);
-  if (duration === 0) {
-    console.log("Time's up");
-  } else {
-    // calls runInterval after interval is elapsed with the updated parameters
-    setTimeout(runInterval, interval, duration - 1, interval);
-  }
-};
 
-/**
- * Interface
- */
-const controls = {
-  start(duration) {
-    runInterval(duration);
-  },
-};
+ const funk = function(...arr){
+  console.log(arr);
+   if(isNaN(arr[1])){
+     arr[1]=0;
+   }
+   if(arr[1]===0 && arr[0]!==0){
+         console.log(arr[0]+ "m left");
+         arr[0]--;
+         arr[1]=60;
+   }
+   if(arr[0]===0 && arr[1]<10){ 
+     console.log(arr[1]);
+   }
+   
+   if(arr[1]===0 && arr[0]===0){
+     console.log("time is up");
+    }
+    else{
+      
+    setTimeout(funk, 1000, arr[0], arr[1]-1);
+    } 
+   };
 
 horloge
-  .command('start <duration>')
+  .command('start <a> [b]')
   .description('starts the horloge timer with a duration in minutes.')
-  .action(controls.start);
+  .action(funk);
 
 horloge.parse(process.argv);
