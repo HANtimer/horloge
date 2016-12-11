@@ -4,7 +4,7 @@ Horloge is a [Pomodoro](http://cirillocompany.de/pages/pomodoro-technique)-style
 
 ## Core Features
 
-* [not implemented] Includes a simple single-session timer
+* Includes a simple single-session timer
 * [not implemented] Breaks your work sessions down into smaller work-slots and break-slots of custom durations
 * [not implemented] Uses native system notifications to let the user know when a session ends or start (with [node-notifier](https://github.com/mikaelbr/node-notifier))
 * [not implemented] System notifications can be disabled. If so, all output is written to the terminal in which Horloge has been started.
